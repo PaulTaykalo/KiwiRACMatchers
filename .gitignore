@@ -34,3 +34,4 @@ Carthage
 Example/.idea
 Podfile.lock
 Example/Pods
+*.xcuserstate
