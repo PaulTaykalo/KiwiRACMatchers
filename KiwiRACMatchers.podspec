@@ -12,6 +12,7 @@ Pod::Spec.new do |s|
   s.summary          = "Adds RAC Matchers to Kiwi framework"
 
   s.description      = <<-DESC
+    Small pod that adds ReactiveCocoa matchers to the Kiwi testing library        
                        DESC
 
   s.homepage         = "https://github.com/PaulTaykalo/KiwiRACMatchers"
@@ -19,7 +20,7 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "Paul Taykalo" => "tt.kilew@gmail.com" }
   s.source           = { :git => "https://github.com/PaulTaykalo/KiwiRACMatchers.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/TT_Kilew'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true

@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DF45435C5FD8911EBC8683B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 175CD5A592879EEEA168098E /* Pods.framework */; };
+		545B0918FC60B10199DCD4F9 /* libPods-KiwiRACMatchers_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 337532315E47DFB9BFFAD706 /* libPods-KiwiRACMatchers_Tests.a */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
-		A45321EB1C1444FD37624C04 /* Pods_KiwiRACMatchers_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE6C8E5D71080E8B79BEEDA /* Pods_KiwiRACMatchers_Tests.framework */; };
 		E4A5E6C81C17AF3B009C529C /* KWRACSignalMatcherSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A5E6C71C17AF3B009C529C /* KWRACSignalMatcherSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		175CD5A592879EEEA168098E /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C50A299B83417018D922338 /* KiwiRACMatchers.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KiwiRACMatchers.podspec; path = ../KiwiRACMatchers.podspec; sourceTree = "<group>"; };
-		2DE6C8E5D71080E8B79BEEDA /* Pods_KiwiRACMatchers_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KiwiRACMatchers_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		337532315E47DFB9BFFAD706 /* libPods-KiwiRACMatchers_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KiwiRACMatchers_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		572299B3D97E4BDE3B4D3BE8 /* Pods-KiwiRACMatchers_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KiwiRACMatchers_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KiwiRACMatchers_Tests/Pods-KiwiRACMatchers_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -41,7 +43,8 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				A45321EB1C1444FD37624C04 /* Pods_KiwiRACMatchers_Tests.framework in Frameworks */,
+				2DF45435C5FD8911EBC8683B /* Pods.framework in Frameworks */,
+				545B0918FC60B10199DCD4F9 /* libPods-KiwiRACMatchers_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +86,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				2DE6C8E5D71080E8B79BEEDA /* Pods_KiwiRACMatchers_Tests.framework */,
+				175CD5A592879EEEA168098E /* Pods.framework */,
+				337532315E47DFB9BFFAD706 /* libPods-KiwiRACMatchers_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

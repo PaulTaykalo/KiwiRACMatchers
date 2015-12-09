@@ -1,9 +1,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '7.0'
 
-use_frameworks!
-
-
 target 'KiwiRACMatchers_Tests', :exclusive => true do
+  pod "ReactiveCocoa"
   pod "KiwiRACMatchers", :path => "../"
 end
