@@ -17,7 +17,8 @@ KiwiRACMatchers is available through [CocoaPods](http://cocoapods.org). To insta
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "KiwiRACMatchers"
+#pod "KiwiRACMatchers"
+pod 'KiwiRACMatchers', :git => 'https://github.com/PaulTaykalo/KiwiRACMatchers'
 ```
 
 ## Author
