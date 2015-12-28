@@ -82,10 +82,13 @@ typedef NS_ENUM(NSInteger, KWRACSignalState) {
 #pragma mark - Getting Matcher Strings
 
 + (NSArray *)matcherStrings {
-    return @[@"sendNext:",
+    return @[
+        @"sendNext:",
         @"complete",
         @"failWithError",
-        @"failWithError:"];
+        @"failWithError:",
+        @"sendNextAndComplete:"
+        ];
 }
 
 
@@ -122,6 +125,15 @@ typedef NS_ENUM(NSInteger, KWRACSignalState) {
         KWRACValueWrapper *wrapper = [[KWRACValueWrapper alloc] init];
         wrapper.value = value;
         return [matcher.values containsObject:wrapper];
+    };
+}
+
+- (void)sendNextAndComplete:(id)value {
+    self.expectation = [NSString stringWithFormat:@"send %@ value and complete", value];
+    self.verificationBlock = ^BOOL(KWRACSignalMatcher *matcher) {
+        KWRACValueWrapper *wrapper = [[KWRACValueWrapper alloc] init];
+        wrapper.value = value;
+        return [matcher.values containsObject:wrapper] && matcher.matcherState == KWRACSignalStateCompleted;
     };
 }
 

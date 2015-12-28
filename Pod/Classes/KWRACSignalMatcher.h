@@ -13,6 +13,7 @@
 
 - (void)complete;
 - (void)sendNext:(id)value;
+- (void)sendNextAndComplete:(id)value;
 - (void)failWithError;
 - (void)failWithError:(NSError *)error;
 
