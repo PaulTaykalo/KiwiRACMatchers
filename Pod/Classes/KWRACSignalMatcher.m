@@ -84,7 +84,8 @@ typedef NS_ENUM(NSInteger, KWRACSignalState) {
 + (NSArray *)matcherStrings {
     return @[
         @"sendNext:",
-        @"sendNextValuePassingTest:"
+        @"sendNextValuePassingTest:",
+        @"sendNextValuePassingTest:description:",
         @"complete",
         @"failWithError",
         @"failWithError:",
