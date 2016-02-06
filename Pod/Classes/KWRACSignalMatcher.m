@@ -84,6 +84,7 @@ typedef NS_ENUM(NSInteger, KWRACSignalState) {
 + (NSArray *)matcherStrings {
     return @[
         @"sendNext:",
+        @"sendNextValuePassingTest:"
         @"complete",
         @"failWithError",
         @"failWithError:",
@@ -127,6 +128,27 @@ typedef NS_ENUM(NSInteger, KWRACSignalState) {
         return [matcher.values containsObject:wrapper];
     };
 }
+
+- (void)sendNextValuePassingTest:(BOOL(^)(id))verificationBlock {
+    [self sendNextValuePassingTest:verificationBlock description:nil];
+}
+
+- (void)sendNextValuePassingTest:(BOOL(^)(id))verificationBlock description:(NSString *)description {
+    if (description) {
+        self.expectation = [NSString stringWithFormat:@"send value %@", description];
+    } else {
+        self.expectation = [NSString stringWithFormat:@"send value passing test"];
+    }
+    self.verificationBlock = ^BOOL(KWRACSignalMatcher *matcher) {
+        for (KWRACValueWrapper *valueWrapper in matcher.values) {
+            if (verificationBlock(valueWrapper.value)) {
+                return YES;
+            }
+        }
+        return NO;
+    };
+}
+
 
 - (void)sendNextAndComplete:(id)value {
     self.expectation = [NSString stringWithFormat:@"send %@ value and complete", value];
