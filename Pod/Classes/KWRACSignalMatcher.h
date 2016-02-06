@@ -13,6 +13,8 @@
 
 - (void)complete;
 - (void)sendNext:(id)value;
+- (void)sendNextValuePassingTest:(BOOL(^)(id))verificationBlock;
+- (void)sendNextValuePassingTest:(BOOL(^)(id))verificationBlock description:(NSString *)description;
 - (void)sendNextAndComplete:(id)value;
 - (void)failWithError;
 - (void)failWithError:(NSError *)error;
