@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "KiwiRACMatchers"
-  s.version          = "0.1.1"
+  s.version          = "0.1.2"
   s.summary          = "Adds RAC Matchers to Kiwi framework"
 
   s.description      = <<-DESC
@@ -33,5 +33,5 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'XCTest'
   s.dependency 'Kiwi', '~> 2.0'
-  s.dependency 'ReactiveCocoa', '~> 2.5'
+  s.dependency 'ReactiveCocoa', '>= 2.5'
 end
